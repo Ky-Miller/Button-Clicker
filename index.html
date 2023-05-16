@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <nav>
+        <h1>Dojonary</h1>
+        <input type="search" placeholder="Search...">
+        <button onclick="Login(this)" id="Login">Login</button>
+    </nav>
+    <div class="main">
+        <!-- this is our container for the main content of the page -->
+        <div class="leftColumn">
+            <!-- Here we have ourleft hand column -->
+            <div class="leftBox">
+                <div class='leftSide'>
+                    <h2>Ninja</h2>
+                    <p id="noun">noun
+                    <p>
+                    <p>Plural:</p>
+                    <p><em>Ninjas</em></p>
+                    <button onclick="alert('Ninja was liked')">35 Likes</button>
+                </div>
+                <div class="rightSide">
+                    <h4 class="definition">A practitioner skilled in the <a>Japanese</a> art of <a>ninjutsu</a>.
+                    </h4>
+                </div>
+            </div>
+            <!-- since the ninja definition boxes are nearly identical we can re-use the same classes/id's for the second box from the first. -->
+            <div class="leftBox">
+                <div class="leftSide">
+                    <h2>Ninja</h2>
+                    <p id="noun">noun
+                    <p>
+                    <p>Plural:</p>
+                    <p><em>Ninjas</em></p>
+                    <button onclick="alert('Ninja was liked')">28 Likes</button>
+                </div>
+                <div class="rightSide">
+                    <h4 class="definition">A <a>programmer</a> who breaks down problems with <a>zen</a>-like focus.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <!-- here is the add definition box for our removable button -->
+        <div class="addDefinition">
+            <h4>Dojonary is defined by <strong>YOU</strong>!</h4>
+            <button onclick="remove(this)" class="addDef">Add Definition</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
